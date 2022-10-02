@@ -13,7 +13,9 @@ function App() {
     <Router>
       <Loader  loader={loader}/>
       <Routes>
-        <Route path ='/' element={<HomePage setloader={setloader}/>}/>
+        <Route path ='/' element={<><HomePage setloader={setloader}/></>
+      
+      }/>
       </Routes>
     </Router>
     </>
