@@ -7,7 +7,8 @@ const Card = (props) => {
           <div className="Card-frame">
             <img
               src={image}
-              alt=""
+              alt="worker imave"
+
               
               className="image-card"
             />
