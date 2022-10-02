@@ -1,4 +1,0 @@
-
-# Internship-Panchami
-
-in progress
