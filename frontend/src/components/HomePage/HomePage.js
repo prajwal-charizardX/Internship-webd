@@ -3,12 +3,14 @@ import Cards from './Cards'
 import Header from './Header'
 import Footer from './Footer'
 import About from './About'
+import Exp from './Exp'
 
 function HomePage(props) {
   return (
     <>
     <Header/>
     <Cards setloader={props.setloader} />
+     <Exp></Exp>
     <About></About>
     <Footer></Footer>
     </>
