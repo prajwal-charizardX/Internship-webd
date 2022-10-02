@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-
+//check
 export class Footer extends Component {
   render() {
     return (
