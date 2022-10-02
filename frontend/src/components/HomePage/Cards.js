@@ -34,6 +34,7 @@ function Cards(props) {
   const handleClick = async (e) => {
     const response = await fetch(`${host}/events/addevent`, {
       method: "POST",
+    //   real
       headers: {
         "Content-Type": "application/json",
       },
