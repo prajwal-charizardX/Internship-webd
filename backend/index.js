@@ -8,6 +8,7 @@ app.use(express.json())
 
 
 app.use('/user',require('./routes/forhomepage'))
+app.use('/card',require('./routes/foraddingcards'))
 
 
 app.listen(PORT,()=>{

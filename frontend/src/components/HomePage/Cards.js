@@ -1,11 +1,22 @@
-import React, { useEffect, useState,useRef  } from "react";
-import { getStorage, ref, uploadBytes } from "firebase/storage";
+import React, { useEffect, useState, useRef } from "react";
+import { getStorage, ref, uploadBytes,getDownloadURL } from "firebase/storage";
 import Loader from "../loader/Loader";
 
 import "./Cards.css";
+import Card from "./Card";
 function Cards(props) {
-    const refClose = useRef();
+  const initial=[]
+  const [content, setcontent] = useState(initial)
+  useEffect(() => {
+    GetAllData()
+  
+    
+  }, [content])
+  
+  const refClose = useRef();
   const [loading, setloading] = useState(false);
+
+
   const [title, settitle] = useState({ title: "", description: "" });
   const [image, setimage] = useState("");
   const handleChange = (e) => {
@@ -20,34 +31,79 @@ function Cards(props) {
 
   const CreateUpload = (e) => {
     e.preventDefault();
-    const storage = getStorage();
+    try{
+      const storage = getStorage();
+      console.log("1")
     const storageRef = ref(storage, `Card/${image.name}`);
+    console.log("2")
     setloading(true);
+    
     uploadBytes(storageRef, image).then((snapshot) => {
-      setimage(snapshot);
+      console.log("3")
+  
+      
+      getDownloadURL(storageRef).then((url) => {
+        console.log("4")
+        setimage(url);
+      })
+
       setloading(false);
       console.log("here is the url");
     });
+
+
+    }catch(e){
+      console.log(e.message)
+    }
+    
   };
 
 
+
+  const host = "http://localhost:5000";
   const handleClick = async (e) => {
-    const response = await fetch(`${host}/events/addevent`, {
+    const response = await fetch(`${host}/card/addcard`, {
       method: "POST",
-    //   real
+      //   real
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        image: image,
+        title: title.title,
         description: title.description,
-        name: title.name,
+        image: image,
+    
+       
       }),
+      
     });
+    console.log(title.description )
+    console.log(title.title)
+    console.log(image )
+
     const json = await response.json();
+    console.log(json)
     setcontent(content.concat(json));
     refClose.current.click();
   };
+
+
+
+  const GetAllData = async (e) => {
+    const response = await fetch(`${host}/card/getalldata`, {
+      method: "GET",
+      //   real
+      headers: {
+        "Content-Type": "application/json",
+      },
+     
+    });
+
+    const json = await response.json();
+    setcontent(json)
+  
+  };
+  
 
   return (
     <div className="card-start">
@@ -89,8 +145,8 @@ function Cards(props) {
                   type="text"
                   onChange={handleChange}
                   className="form-control"
-                  name="name"
-                  id="name"
+                  name="title"
+                  id="title"
                   minLength={3}
                   required
                 />
@@ -137,8 +193,8 @@ function Cards(props) {
                 disabled={
                   loading === true ||
                   image.length === 0 ||
-                  title.description.length < 5 ||
-                  title.name.length < 2
+                  title.description.length < 5 
+                  // title.name.length < 2
                 }
               >
                 Save changes
@@ -147,17 +203,16 @@ function Cards(props) {
           </div>
         </div>
       </div>
-
       <div className="flex-box">
-        <div className="Card-frame">
-          <img
-            src="https://demo.htmlcodex.com/2500/home-repair-website-template/img/service-4.jpg"
-            alt=""
-            srcset=""
-            className="image-card"
-          />
-        </div>
-      </div>
+      {content.map((e)=>{
+          return  <Card data={e} key={e.id}/>
+        
+          
+        })
+      }
+       </div>
+
+     
     </div>
   );
 }
