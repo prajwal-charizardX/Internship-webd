@@ -1,3 +1,92 @@
+.about-span{
+    color: #999999;
+    padding-bottom: 2rem;
+
+}
+.about-div h1{
+    color:black ;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.exp-grid{
+    position: absolute;
+    top:30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.about-div{
+    border-left: 0.5rem solid  #fda12b;
+    padding-left: 2rem;
+}
+.about{
+    padding-left: 2rem ;
+    padding-right: 2rem;
+}
+.about-serv{
+    display: grid;
+    border-top:  0.1rem solid #d8d2d2;;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    padding-top: 2rem;
+
+
+}
+.about-serv div{
+   font-weight: 700;
+   font-size: large;
+}
+
+.back{
+    color: white;
+    width:18rem;
+    height: 12rem;
+    padding-left: 5rem
+    ;z-index: 2;
+    ;
+}
+.back .exp-30{
+    color:aliceblue;
+    background-color: #fda12b;
+    width: 10rem;
+    height: 10rem;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    z-index: 2;
+
+}
+.back .exp-30 span{
+    font-size: 40px;
+}
+.back .exp-30 .expr{
+    font-size: 20px;
+}
+
+.exp-pic{
+    position: absolute;
+    padding-right: 2rem;
+    margin-left: 10%;
+    margin-top: 0;
+    z-index: -1;
+}
 .exp-pic-div{
-    
+    margin: 1rem;
+    width: max-content;
+    height: max-content;
+}
+
+@media only screen and (max-width: 768px) {
+   .exp-grid{
+    display: grid;
+    grid-template-columns:1fr;
+
+
+   }
+   .about{
+    position: absolute;
+    top:50rem;
+    width: 100%;
+   }
+
 }
