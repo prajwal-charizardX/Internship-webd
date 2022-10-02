@@ -78,27 +78,20 @@ router.post(
       // const check = db.collection('users').doc(email);
       // const doc = await check.get();
       // const compass=doc.data().password
-      const snapshot =  await db.collection("users").where("email","==",email).get(1);
-      var new_pass
-      var new_id
+      const snapshot = await db
+        .collection("users")
+        .where("email", "==", email)
+        .get(1);
+      var new_pass;
+      var new_id;
       if (!snapshot) {
         return res.status(400).json({ error: "Please try to login again " });
-      
-      } 
-      snapshot.forEach(doc => {
+      }
+      snapshot.forEach((doc) => {
         console.log(doc.data().password);
-        new_pass=doc.data().password
-        new_id=doc.id
+        new_pass = doc.data().password;
+        new_id = doc.id;
       });
-      
-      
-    
-      
- 
-    
-   
-     
-
 
       const compare = await bcrypt.compare(password, new_pass);
       if (!compare) {
@@ -107,15 +100,14 @@ router.post(
       console.log("logged in ");
       const data = {
         user: {
-          id: new_id
+          id: new_id,
         },
       };
       const authtoken = jwt.sign(data, JWT_SECRET);
       console.log(authtoken);
 
       res.json({ authtoken });
-    }
-     catch (error) {
+    } catch (error) {
       res.status(500).send({ error: error.message });
     }
   }
