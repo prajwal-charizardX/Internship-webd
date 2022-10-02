@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cards.css'
 const Card = (props) => {
-    const{id,image,description,title}=props.data
+    const{image,description,title}=props.data
   return (
     <div className='card-outer'>
           <div className="Card-frame">
