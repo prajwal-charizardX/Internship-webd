@@ -17,14 +17,14 @@ function Slider() {
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
         <img src={Pic2} class="d-block w-95" alt="..." height={500}/>
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block">
           <h5>Our Services</h5>
           <p>construction and renovation and interior on a turnkey basis</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
       <img src={Picz} class="d-block w-99" alt="..." height={500}/>
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption  d-sm-block ">
           <h5>We Specialize in</h5>
           <p>3d elevation and structural design,planning</p>
         </div>

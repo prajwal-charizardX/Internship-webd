@@ -16,3 +16,25 @@ p{
   font-weight: bold;
 
 }
+
+@media screen and (max-width:961px){
+  .d-block{
+    width: 80vw;
+    height: 300px;
+  }
+  h5 {
+    color: #F8F9FA;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+   }
+   p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+  
+  }
+  
+
+}
