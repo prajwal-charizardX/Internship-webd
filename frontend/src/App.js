@@ -11,10 +11,11 @@ function App() {
   return (
     <>
     <Router>
-      <Loader  loader={loader}/>
+      
       <Routes>
         <Route path ='/' element={<HomePage setloader={setloader}/>}/>
       </Routes>
+      <Loader  loader={loader}/>
     </Router>
     </>
   );

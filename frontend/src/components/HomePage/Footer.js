@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
+import  logo from './panchami-white.png'
 
 export class Footer extends Component {
   render() {
@@ -9,9 +10,9 @@ export class Footer extends Component {
           <div className="container">
             <div className="col">
               <div className="box">
-                <h1>
-                  <i className="fa fa-building  me-3"></i> &#160;Panchami
-                </h1>
+               
+                  <img src={logo} alt="" className="logo-img-footer" />
+              
                 <p>A construction and renovation company</p>
 
                 <a className="text-primary-h" href="/">

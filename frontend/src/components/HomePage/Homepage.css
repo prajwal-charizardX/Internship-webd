@@ -8,7 +8,7 @@
 .header {
   height: 100px;
   background-color: #EEEEEE;
-width: max-content;
+width: 100%;
 /* position: fixed; */
 
   display: flex;
@@ -27,7 +27,7 @@ width: max-content;
 ul {
   list-style: none;
   display: flex;
-  padding-left: 61vw;
+  padding-left: 49vw;
 margin-right: 40px;
 
 }
@@ -49,7 +49,7 @@ a:hover{
 
 .header-logo{
     margin-left: 40px;
-    width: 90px;
+    width: 12rem;
 }
 .reactive-header{
     display: none;

@@ -19,10 +19,16 @@ router.get(
   
 
   async (req, res) => {
-    const citiesRef = db.collection("Cards");
-    const snapshot = await citiesRef.get();
-    const data= snapshot.docs.map((doc)=>({id:doc.id,...doc.data()}))
-    res.json(data)
+    try{
+      const citiesRef = db.collection("Cards");
+      const snapshot = await citiesRef.get();
+      const data= snapshot.docs.map((doc)=>({id:doc.id,...doc.data()}))
+      res.json(data)
+
+    }catch(error){
+      console.log(error.message)
+    }
+   
     
   }
 );

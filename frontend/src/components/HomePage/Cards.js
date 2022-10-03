@@ -8,7 +8,9 @@ function Cards(props) {
   const initial=[]
   const [content, setcontent] = useState(initial)
   useEffect(() => {
+  
     GetAllData()
+  
   
     
   }, [content])
@@ -90,6 +92,7 @@ function Cards(props) {
 
 
   const GetAllData = async (e) => {
+    props.setloader(true)
     const response = await fetch(`${host}/card/getalldata`, {
       method: "GET",
       //   real
@@ -101,9 +104,23 @@ function Cards(props) {
 
     const json = await response.json();
     setcontent(json)
+    props.setloader(false)
   
   };
   
+  const HandleDelete = async (id) => {
+    const response = await fetch(`${host}/card/deletecard/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    await response.json();
+    const sort = content.filter((e) => {
+      return e._id !== id;
+    });
+    setcontent(sort);
+  };
 
   return (
     <div className="card-start">
@@ -205,7 +222,7 @@ function Cards(props) {
       </div>
       <div className="flex-box">
       {content.map((e)=>{
-          return  <Card data={e} key={e.id}/>
+          return  <Card data={e} key={e.id}  deletecard={HandleDelete}/>
         
           
         })
