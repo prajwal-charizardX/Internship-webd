@@ -12,6 +12,7 @@
     display: grid;
  grid-template-columns: 1fr 1fr;
  height: 300px;
+ border: 5px solid white;
  
 }
 .grid-ele1{
@@ -31,6 +32,7 @@
 
   text-align: left;
   font-size: 1000% !important;
+  padding-left: 5%;
 }
 
 .grid-ele2{
@@ -51,6 +53,9 @@
     text-align: left;
     font-weight: 500;
     font-size: large !important;
+ }
+ .grid-desc h2{
+    font-weight: 500;
  }
 
  @media only screen and (max-width: 768px) {

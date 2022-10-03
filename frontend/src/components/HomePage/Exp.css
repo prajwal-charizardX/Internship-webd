@@ -22,53 +22,70 @@
 .about{
     padding-left: 2rem ;
     padding-right: 2rem;
+    margin-top: 30px;
 }
 .about-serv{
     display: grid;
     border-top:  0.1rem solid #d8d2d2;;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 2rem;
+    margin-top: 5%;
     padding-top: 2rem;
 
 
+
 }
+.about-serv i{
+    color: #fda12b;
+    font-size: 50px;
+    text-align: right;
+    
+}
+.about-serv-ch{
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr ;
+    margin: 5px;
+
+}
+
 .about-serv div{
    font-weight: 700;
    font-size: large;
+
+   
 }
 
-.back{
-    color: white;
-    width:18rem;
-    height: 12rem;
-    padding-left: 5rem
-    ;z-index: 2;
-    ;
-}
-.back .exp-30{
+ 
+
+.exp-30{
     color:aliceblue;
+    
+    margin-bottom: 10px;
     background-color: #fda12b;
     width: 12rem;
     height: 12rem;
-   
+    border-right:1rem solid white;
+    border-bottom: 1rem solid white ;
     text-align: center;
     font-weight: 600;
     z-index: 2;
     display: grid;
 }
-.back .exp-30 .n30{
-    font-size:60px;
+.exp-30 .n30{
+    font-size:4rem;
     padding: 0%;
-    height: 60px;
+    height: 1rem;
 }
-.back .exp-30 span{
-    font-size: 50px;
-    text-align: center;
-    height: 50px;
+.exp-30 span{
+    font-size: 3rem;
+    padding :10%;
+    height: 1rem;
 }
-.back .exp-30 .expr{
-    font-size: 30px;
-    height: 60px;
+.exp-30 .expr{
+    font-size: 2rem;
+    height: 1rem;
+    margin-bottom: 10%;
+    
 }
 
 .exp-pic{
@@ -76,24 +93,46 @@
     margin-left: 10%;
     margin-top: 0;
     z-index: -1;
+    
 }
-.exp-pic-div{
-    margin: 1rem;
-    width: max-content;
-    height: max-content;
+ .exp-pic-div {
+   background-image: url('./img1.jpeg');
+    height: 90%;
+   width: 70%;
+   align-items: center  ;
+   margin:1rem;
+   margin-left:20%
 }
+
 
 @media only screen and (max-width: 768px) {
    .exp-grid{
     display: grid;
     grid-template-columns:1fr;
+    padding:4%
 
 
    }
+
+.exp-pic-div{
+    margin: 0%;
+    height: 500px;
+    width: 350px;
+    
+}
+   
    .about{
-    position: absolute;
-    top:50rem;
-    width: 100%;
-   }
+    padding: 4%;
+    padding-right: 23%;
 
+    top:50rem;
+    
+   }
+  .about-serv{
+    grid-template-columns:1fr;
+    text-align: left;
+    grid-gap:10px 
+
+    
+  }
 }

@@ -9,16 +9,14 @@ export class Exp extends Component {
         {" "}
         <div className="exp-grid">
           <div className="exp-pic-div">
-            <div className="back">
+            
               {" "}
               <div className="exp-30">
                 <span className="n30">30</span><span>Years</span>
                 <span className="expr">Experience</span>
               </div>{" "}
-            </div>
-            <div className="exp-pic">
-              <img src={img3} alt="" />
-            </div>
+            
+        
           </div>
           <div className="about">
             <div className="about-div">
@@ -30,11 +28,12 @@ export class Exp extends Component {
               vel, quibusdam asperiores eum possimus cum, reiciendis tempore,
               vitae voluptates error soluta blanditiis excepturi laborum? Iusto
               nulla suscipit cum quibusdam laborum?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas aliquid natus incidunt, dolore ab modi consectetur dolores illum distinctio quibusdam dolorem praesentium pariatur alias quo asperiores earum quisquam laborum!
             </div>
             <div className="about-serv">
-              <div>Ontime at services</div>
-              <div>24/7 hours services</div>
-              <div>Verified professionals</div>
+              <div className="about-serv-ch"><i class="fa-sharp fa-solid fa-check"></i><div> Ontime at services</div></div>
+              <div className="about-serv-ch"> <i class="fa-sharp fa-solid fa-check"></i><div>24/7 hours services</div></div>
+              <div className="about-serv-ch"> <i class="fa-sharp fa-solid fa-check"></i><div>Verified professionals</div></div>
             </div>
           </div>
         </div>
