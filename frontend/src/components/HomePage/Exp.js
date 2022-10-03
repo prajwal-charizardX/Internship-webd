@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Exp.css";
+import img3 from './img2.jpeg'
 
 export class Exp extends Component {
   render() {
@@ -11,12 +12,12 @@ export class Exp extends Component {
             <div className="back">
               {" "}
               <div className="exp-30">
-                30<span>Years</span>
+                <span className="n30">30</span><span>Years</span>
                 <span className="expr">Experience</span>
               </div>{" "}
             </div>
             <div className="exp-pic">
-              <img src="./logo512.png " alt="" />
+              <img src={img3} alt="" />
             </div>
           </div>
           <div className="about">

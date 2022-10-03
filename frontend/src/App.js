@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path ='/' element={<HomePage setloader={setloader}/>}/>
       </Routes>
-      <Loader  loader={loader}/>
+      {/* <Loader  loader={loader}/> */}
     </Router>
     </>
   );
