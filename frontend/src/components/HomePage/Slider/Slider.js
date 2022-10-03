@@ -1,5 +1,5 @@
 import React from 'react';
-import Pic1 from './pics/0ad2396d-be8c-4970-b4f4-bfff04dac5d6.jpg'
+// import Pic1 from './pics/0ad2396d-be8c-4970-b4f4-bfff04dac5d6.jpg'
 import Pic2 from './pics/pic2.webp'
 import Pic3 from './pics/Pic3.jpg'
 import Picz from './pics/Pic1.webp'
