@@ -69,7 +69,7 @@ a {
 .box div:hover {
   transition: 200ms;
   letter-spacing: 1px;
-  color:#f8f9fa;
+  color:#f8f9fa ;
 }
 .copyright {
   border-top: solid 1px;
