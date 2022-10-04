@@ -15,11 +15,11 @@ export class Footer extends Component {
               
                 <p>A construction and renovation company</p>
 
-                <a className="text-primary-h" href="/">
+            <div className="text-primary">   <a className="text-primary-h" href="/">
                   
                     <i className="fab fa-linkedin-in"></i>
                   
-                </a>
+                </a></div> 
               </div>
               <div className="box">
                 <h4>Address</h4>

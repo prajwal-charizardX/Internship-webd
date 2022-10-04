@@ -51,23 +51,16 @@ a {
   line-height: 2rem;
   color: #999999;
 }
-
-
-.text-primary {
-  color: #fda12b !important   ;
-  border-color: #fda12b;
-  border: solid 1px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  
-
+.text-primary-h{
+  border: solid 1px #fda12b;
+  padding:5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
-
-.text-primary-h :hover {
-
+.text-primary a:hover{
+  color: #f8f9fa;
   background-color: #fda12b;
-  border-color: #fda12b;
+  
 }
 
 .qlink:hover {
