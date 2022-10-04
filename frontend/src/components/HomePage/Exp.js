@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Exp.css";
-import img3 from './img2.jpeg'
+
 
 export class Exp extends Component {
   render() {
