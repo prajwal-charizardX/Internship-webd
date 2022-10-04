@@ -5,7 +5,7 @@ const Card = (props) => {
     const{id,image,description,title}=props.data
     const handleClick=()=>{
         console.log(id)
-        props.props.deletecard(id)
+        props.deletecard(id)
     }
  
   return (
