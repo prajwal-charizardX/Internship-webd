@@ -12,20 +12,14 @@ export class About extends Component {
             <div className="grid-title">01</div>
             <div className="grid-desc">
               <h2>Construction</h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              pariatur laudantium nihil impedit fuga quae earum eum? Possimus
-              dolorem voluptatem explicabo natus at ad, eaque beatae tenetur
-              quia molestiae quae?
+              To realize this vision, our workforce and associates strive to achieve excellence in every aspect of development to enhance quality of living for our customers.
             </div>
           </div>
           <div className="grid-ele2">
             <div className="grid-title">02</div>
             <div className="grid-desc">
               <h2>Interior Design</h2>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa qui
-              voluptates accusantium molestias facilis aperiam incidunt, esse,
-              necessitatibus perspiciatis itaque beatae laborum sunt vel dicta
-              pariatur velit sed minus explicabo.
+              We have well experienced and professional team who has deep and flexible knowledge in interior designing services. We provide the most innovative Home interior, Office interior and Commercial interior as best as we could.
             </div>
           </div>
         </div>

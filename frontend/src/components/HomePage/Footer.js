@@ -23,36 +23,36 @@ export class Footer extends Component {
               </div>
               <div className="box">
                 <h4>Address</h4>
-                <p>
-                  <i className="fa-solid fa-location-dot"></i> &#160; address
+                <p className="para">
+                  <i className="fa-solid fa-location-dot"></i> &#160; SMR Vinay Crescent ,1st Main Rd, HBR Layout 4th Block HBR Layout, Bengaluru, Karnataka 560043
                 </p>
-                <p>
-                  <i className="fa-solid fa-phone"></i>&#160; phone number
+                <p className="para">
+                  <i className="fa-solid fa-phone"></i>&#160; +91 9480865676
                 </p>
-                <p>
+                <p className="para">
                   <i className="fa-solid fa-envelope"></i>&#160;
                   panchamiassociates@gmail.com
                 </p>
               </div>
               <div className="box">
                 <h4>Quick Links</h4>
-                <div>
-                  <a href="/">
+               <div>
+                  <a className="qlink" href="/">
                     <i className="fa-solid fa-chevron-right"></i>&#160;About Us
                   </a>
                 </div>
                 <div>
-                  <a href="/">
+                  <a className="qlink" href="/">
                     <i className="fa-solid fa-chevron-right"></i>&#160;Contact
                     Us
                   </a>
                 </div>
                 <div>
-                  <a href="/">
+                  <a className="qlink" href="/">
                     <i className="fa-solid fa-chevron-right"></i>{" "}
                     &#160;Completed Projects
                   </a>
-                </div>
+                </div> 
               </div>
             </div>
           </div>

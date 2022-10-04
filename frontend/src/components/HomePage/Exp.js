@@ -24,12 +24,8 @@ export class Exp extends Component {
               <h1>Unique Solutions For Residentials & Industries! </h1>
             </div>
             <div className="about-span  ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              vel, quibusdam asperiores eum possimus cum, reiciendis tempore,
-              vitae voluptates error soluta blanditiis excepturi laborum? Iusto
-              nulla suscipit cum quibusdam laborum?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptas aliquid natus incidunt, dolore ab modi consectetur dolores illum distinctio quibusdam dolorem praesentium pariatur alias quo asperiores earum quisquam laborum!
-            </div>
+            To realize this vision, our workforce and associates strive to achieve excellence in every aspect of development to enhance quality of living for our customers.            </div>
+            <div className="about-span  "> We have well experienced and professional team who has deep and flexible knowledge in interior designing services. We provide the most innovative Home interior, Office interior and Commercial interior as best as we could.</div>
             <div className="about-serv">
               <div className="about-serv-ch"><i class="fa-sharp fa-solid fa-check"></i><div> Ontime at services</div></div>
               <div className="about-serv-ch"> <i class="fa-sharp fa-solid fa-check"></i><div>24/7 hours services</div></div>

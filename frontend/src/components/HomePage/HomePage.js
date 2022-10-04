@@ -10,7 +10,7 @@ function HomePage(props) {
   return (
     <>
     <Header/>
-    <Cards setloader={props.setloader} />
+    {/* <Cards setloader={props.setloader} /> */}
      <Exp></Exp>
     <About></About>
   
