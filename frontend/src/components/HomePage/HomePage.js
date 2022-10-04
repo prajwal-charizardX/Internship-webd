@@ -7,11 +7,13 @@ import About from './About'
 import Exp from './Exp'
 
 function HomePage(props) {
+  
   return (
     <>
  
     <Slider/>
      <Exp/>
+
     <About/>
     {/* <Cards setloader={props.setloader} /> */}
   
