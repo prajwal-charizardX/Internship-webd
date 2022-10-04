@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import "./About.css";
 
 
-export class About extends Component {
-  render() {
-    
-    return (
-      <div className="container-about">
+
+const About = () => {
+  return (
+    <div className="container-about">
         <div className="grid">
           <div className="grid-ele1">
             <div className="grid-title">01</div>
@@ -24,8 +23,7 @@ export class About extends Component {
           </div>
         </div>
       </div>
-    );
-  }
+  )
 }
 
-export default About;
+export default About

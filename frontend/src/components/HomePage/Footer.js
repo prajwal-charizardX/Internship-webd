@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Footer.css";
-import  logo from './panchami-white.png'
+import  logo from './panchami-enlarged.png'
 
 export class Footer extends Component {
   render() {
