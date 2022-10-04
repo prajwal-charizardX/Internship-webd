@@ -4,8 +4,8 @@
   font-family: "Roboto", sans-serif;
   background-color: #182333;
  
- 
-  line-height: 1.5;
+  
+
   color: #999999;
   width: 100%;
 
@@ -24,6 +24,7 @@ h4 {
   padding: 1rem;
   width: 100%;
   margin-left: 5%;
+  height: 100%;
 }
 .box {
   width: 450px;
@@ -33,7 +34,7 @@ h4 {
   margin: 1% 1% 1% 1%;
 }
 p{
-  padding: 5%;
+
   text-align: left;
 }
 

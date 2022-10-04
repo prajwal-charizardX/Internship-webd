@@ -12,13 +12,8 @@
     display: grid;
  grid-template-columns: 1fr 1fr;
  height: 300px;
-<<<<<<< HEAD
  width: 100%;
  /* border: 5px solid white; */
-=======
- border: 5px solid white;
- margin-bottom: 200px;
->>>>>>> 1b3bbad35bd761626889c3bedb8ef09b2e58a54e
  
 }
 .grid-ele1{
