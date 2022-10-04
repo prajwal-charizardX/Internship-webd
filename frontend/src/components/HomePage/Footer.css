@@ -96,9 +96,7 @@ a {
     line-height: 1.5;
     color: #999999;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr ;
-
+    
   
     
   }

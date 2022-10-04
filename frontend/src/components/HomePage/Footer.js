@@ -16,9 +16,9 @@ export class Footer extends Component {
                 <p>A construction and renovation company</p>
 
                 <a className="text-primary-h" href="/">
-                  <div className="text-primary ">
+                  
                     <i className="fab fa-linkedin-in"></i>
-                  </div>
+                  
                 </a>
               </div>
               <div className="box">
