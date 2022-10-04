@@ -38,7 +38,7 @@ const alldata=[
   },
   {
     "id": "mfIdZqagkpEA6lp1Jg4o",
-    "description": "We at Panchami offer a variety of interior designing solutions as well as Turnkey Interior Design, which are uniquely crafted to suit your design needs and requirements.",
+    "description": "We at Panchami offer a variety of interior designing solutions as well as Turnkey Interior Design.",
     "title": "Interior Design",
     "image": "https://firebasestorage.googleapis.com/v0/b/panchami-associates.appspot.com/o/Card%2FInterior%20Planning%20.jpg?alt=media&token=7516dd8f-ae6d-414e-bbe8-65fd70a75337"
   },
@@ -49,6 +49,7 @@ const alldata=[
     "image": "https://firebasestorage.googleapis.com/v0/b/panchami-associates.appspot.com/o/Card%2Frenovation.jpg?alt=media&token=dd40fcbe-bbe4-43c8-adaa-6c99111ed0ea"
   }
 ]
+ 
 
 
 const db = getFirestore();
@@ -58,10 +59,11 @@ router.get(
 
   async (req, res) => {
     try{
-      const citiesRef = db.collection("Cards");
-      const snapshot = await citiesRef.get();
-      const data= snapshot.docs.map((doc)=>({id:doc.id,...doc.data()}))
-      res.json(data)
+      // const citiesRef = db.collection("Cards");
+      // const snapshot = await citiesRef.get();
+      // const data= snapshot.docs.map((doc)=>({id:doc.id,...doc.data()}))
+      // res.json(data)
+      res.json(alldata)
 
     }catch(err){
       res.json(alldata)

@@ -13,6 +13,7 @@
  grid-template-columns: 1fr 1fr;
  height: 300px;
  border: 5px solid white;
+ margin-bottom: 200px;
  
 }
 .grid-ele1{

@@ -69,6 +69,7 @@ router.post(
   ],
   async (req, res) => {
     const errors = validationResult(req);
+    let success=false
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
@@ -85,6 +86,7 @@ router.post(
       var new_pass;
       var new_id;
       if (!snapshot) {
+        success=false
         return res.status(400).json({ error: "Please try to login again " });
       }
       snapshot.forEach((doc) => {
@@ -104,9 +106,10 @@ router.post(
         },
       };
       const authtoken = jwt.sign(data, JWT_SECRET);
+      success=true
       console.log(authtoken);
 
-      res.json({ authtoken });
+      res.json({ success,authtoken });
     } catch (error) {
       res.status(500).send({ error: error.message });
     }

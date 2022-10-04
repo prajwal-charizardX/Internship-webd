@@ -28,9 +28,9 @@ function Header() {
             </div>
             <ul>
                 <li><Link to="/" className='header-li'>Home</Link></li>
-                <li><Link to="/" className='header-li'>About Us</Link></li>
-                <li><Link to="/AboutUs" className='header-li'>Contact Us</Link></li>
-                <li><Link to="/" className='header-li'>Projects</Link></li>
+                <li><Link to="/About" className='header-li'>About Us</Link></li>
+                <li><Link to="/Contact" className='header-li'>Contact Us</Link></li>
+                <li><Link to="/Projects" className='header-li'>Projects</Link></li>
                 
                 
             </ul>

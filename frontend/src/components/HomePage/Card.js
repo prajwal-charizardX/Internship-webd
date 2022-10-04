@@ -11,6 +11,7 @@ const Card = (props) => {
   return (
     <div className='card-outer'>
           <div className="Card-frame">
+            <div className='wrap-image'>
             <img
               src={image}
               alt="worker imave"
@@ -18,10 +19,13 @@ const Card = (props) => {
               
               className="image-card"
             />
+             </div>
             <div className="card-Title">{title}</div>
             <div className="card-text">{description}</div>
-            <BiPencil size='2rem' className='try' onClick={handleClick}/>
+          
           </div>
+          <BiPencil size='2rem' className='try' onClick={handleClick}/>
+         
         </div>
   )
 }
