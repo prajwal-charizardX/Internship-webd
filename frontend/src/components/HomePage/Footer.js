@@ -53,7 +53,7 @@ export class Footer extends Component {
                     &#160;Completed Projects
                   </a>
                 </div> 
-              </div>
+                </div>
             </div>
           </div>
           <div className="copyright">
