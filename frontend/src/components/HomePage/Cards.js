@@ -124,6 +124,8 @@ function Cards(props) {
 
   return (
     <div className="card-start">
+      {
+        localStorage.getItem('token')?
       <button
         type="button"
         className="btn btn-primary"
@@ -131,7 +133,7 @@ function Cards(props) {
         data-bs-target="#exampleModal"
       >
         Add Events
-      </button>
+      </button>:null}
 
       <div
         className="modal fade"

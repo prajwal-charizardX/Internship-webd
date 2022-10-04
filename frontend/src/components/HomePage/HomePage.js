@@ -1,4 +1,5 @@
 import React from 'react'
+import Cards from './Cards'
 
 import Slider from './Slider/Slider'
 
@@ -8,7 +9,7 @@ import Exp from './Exp'
 function HomePage(props) {
   return (
     <>
-    
+ 
     <Slider/>
      <Exp/>
     <About/>
@@ -17,8 +18,7 @@ function HomePage(props) {
     
    
     
-    {/* <Cards setloader={props.setloader} /> */}
- 
+    
     </>
   )
 }

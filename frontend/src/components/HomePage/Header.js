@@ -1,73 +1,119 @@
-
-import { Link } from 'react-router-dom'
-import './Homepage.css'
-import {CSSTransition} from 'react-transition-group'
+import { Link,useNavigate } from "react-router-dom";
+import "./Homepage.css";
+import { CSSTransition } from "react-transition-group";
 // import classNames from 'classnames';
-import logo from './last.png'
+import logo from "./panchami-enlarged-black.png";
 
-import {BsMenuButtonWide} from 'react-icons/bs';
-import React,{useState} from 'react'
+
+import { BsMenuButtonWide } from "react-icons/bs";
+import React, { useState,useEffect } from "react";
 function Header() {
-    const handleClick=()=>{
-        setsidebar(true)
-        console.log("pressed")
-    }
-    const closeClick=()=>{
-        setsidebar(false)
-        console.log("pressed")
-    }
-    const [sidebar, setsidebar] = useState(false)
+    let navigate=useNavigate()
+  const handleClick = () => {
+    setsidebar(true);
+    console.log("pressed");
+  };
+  const closeClick = () => {
+    setsidebar(false);
+    console.log("pressed");
+  };
+  const [storage, setstorage] = useState(localStorage.getItem("token"));
+
+  useEffect(() => {
+
+    const item = localStorage.getItem("token");
+    setstorage(item);
+    
+  }, [storage]);
+
+
+  const [sidebar, setsidebar] = useState(false);
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/");
+  };
   return (
     <>
-    <nav>
-        <div className='header' >
-            <div className='inner-header'>
-            <img src={logo} alt="" className='header-logo' />
-            <div className='burger-name'>
-            <BsMenuButtonWide size='2rem' className='try' onClick={handleClick}/>
+      <nav>
+        <div className="header">
+          <div className="inner-header">
+            <img src={logo} alt="" className="header-logo" />
+            <div className="burger-name">
+              <BsMenuButtonWide
+                size="2rem"
+                className="try"
+                onClick={handleClick}
+              />
             </div>
+
             <ul>
-                <li><Link to="/" className='header-li'>Home</Link></li>
-                <li><Link to="/About" className='header-li'>About Us</Link></li>
-                <li><Link to="/Contact" className='header-li'>Contact Us</Link></li>
-                <li><Link to="/Projects" className='header-li'>Projects</Link></li>
-                
-                
+              <li>
+                <Link to="/" className="header-li">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/About" className="header-li">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/Contact" className="header-li">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/Projects" className="header-li">
+                  Projects
+                </Link>
+              </li>
+              {localStorage.getItem("token") ? (
+                <li>
+                  <button onClick={handleLogout}>Logout</button>
+                </li>
+              ) : null}
             </ul>
-            </div>
-            {sidebar?
-            <CSSTransition 
-            in={sidebar}
-            timeout={300
-            }
-            classNames="slide-in-left">
-
-            <div className='reactive-header'>
-                <div className='reactive-header-tags'>
-                 
-                <li><Link to="/" className='header-li'>Home</Link></li>
-                <li><Link to="/" className='header-li'>About Us</Link></li>
-                <li><Link to="/AboutUs" className='header-li'>Contact Us</Link></li>
-                <li><Link to="/" className='header-li'>Projects</Link></li>
-                   
-                
+          </div>
+          {sidebar ? (
+            <CSSTransition
+              in={sidebar}
+              timeout={300}
+              classNames="slide-in-left"
+            >
+              <div className="reactive-header">
+                <div className="reactive-header-tags">
+                  <li>
+                    <Link to="/" className="header-li">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="header-li">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/AboutUs" className="header-li">
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/" className="header-li">
+                      Projects
+                    </Link>
+                  </li>
                 </div>
-            </div>
+              </div>
             </CSSTransition>
-            :null}
+          ) : null}
 
-           { sidebar?
-            
-           <div className='background-drawer' onClick={closeClick}>
-            </div>
-           
-:null}
-            
-
+          {sidebar ? (
+            <div className="background-drawer" onClick={closeClick}></div>
+          ) : null}
         </div>
-    </nav>
+      </nav>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;
