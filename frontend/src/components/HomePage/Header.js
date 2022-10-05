@@ -19,10 +19,13 @@ function Header() {
   };
   const [storage, setstorage] = useState(localStorage.getItem("token"));
 
+  
+
   useEffect(() => {
 
     const item = localStorage.getItem("token");
-    setstorage(item);
+   
+  
     
   }, [storage]);
 

@@ -222,6 +222,13 @@ function Cards(props) {
           </div>
         </div>
       </div>
+      <div className="Our-services">
+        <div className="Our-services-orange"></div>
+        <div className="Our-services-text">
+        <span className="about-span">ABOUT US</span>
+          <p>Constructions and <br/>Renovation Solutions </p>
+        </div>
+      </div>
       <div className="flex-box">
       {content.map((e)=>{
           return  <Card data={e} key={e.id}  deletecard={HandleDelete}/>
