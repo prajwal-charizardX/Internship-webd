@@ -2,9 +2,11 @@
 
 .container-about{
    font-family: 'Poppins', sans-serif;
-    top: 100rem;
+
     width: 100%;
     margin-top: 200px;
+    margin-bottom: 20rem;
+    
     
     
 
@@ -73,4 +75,10 @@
 
       height: 100%;
     }
+    .container-about {
+      font-family: 'Poppins', sans-serif;
+      width: 100%;
+      margin-top: 200px;
+      margin-bottom: 40rem;
+  }
  }

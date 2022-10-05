@@ -24,7 +24,8 @@ const Card = (props) => {
             <div className="card-text">{description}</div>
           
           </div>
-          <BiPencil size='2rem' className='try' onClick={handleClick}/>
+          {localStorage.getItem('token')?
+          <BiPencil size='2rem' className='try' onClick={handleClick}/>:null}
          
         </div>
   )

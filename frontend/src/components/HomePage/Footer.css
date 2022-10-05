@@ -80,8 +80,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .footer {
-    position:absolute;
-    top: 400%;
+   margin-top: 100px;
    
     background-color: #182333;
     font-size: 1rem;
@@ -89,6 +88,7 @@ a {
     line-height: 1.5;
     color: #999999;
     width: 100%;
+    margin-bottom: 11rem;
     
   
     

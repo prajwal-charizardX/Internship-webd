@@ -110,11 +110,12 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 961px) {
    .exp-grid{
     display: grid;
     grid-template-columns:1fr;
     padding:4%
+
 
 
    }
@@ -136,8 +137,11 @@
   .about-serv{
     grid-template-columns:1fr;
     text-align: left;
-    grid-gap:10px 
+    grid-gap:10px ;
+
+  
 
     
   }
+  
 }
