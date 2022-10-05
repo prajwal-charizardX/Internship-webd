@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+.sp-span{
+    color: #999999;
+    padding-bottom: 2rem;
+
+}
+.sp-div h1{
+    color:black ;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.exp-grid{
+    font-family: 'Poppins', sans-serif;
+
+   margin-top:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.sp-div{
+    border-left: 0.5rem solid  #fda12b;
+    padding-left: 2rem;
+}
+.sp{
+    padding-left: 3rem ;
+    padding-right: 2rem;
+    margin-top: 30px;
+}
+.sp-serv{
+    display: grid;
+    border-top:  0.1rem solid #d8d2d2;;
+    grid-template-columns: 1fr  1fr;
+    grid-gap: 8%;
+    padding-bottom: 10%;
+  
+ padding-top: 2rem;
+
+
+
+}
+#subcontract{
+    text-align: right;
+    margin-right: 10%;
+}
+#subexp{
+    margin-left: 15%;
+}
+.sp-serv i{
+    color: #fda12b;
+    font-size: 45px;
+    
+    text-align: center;
+    
+}
+.sp-serv-ch{
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 1fr 1fr ;
+    margin: 5px;
+
+}
+
+.sp-serv div{
+   font-weight: 700;
+   font-size: large;
+
+   
+}
+
+ 
+
+.exp-30{
+    color:aliceblue;
+    font-family: 'Poppins', sans-serif;
+
+    margin-bottom: 10px;
+    background-color: #fda12b;
+    width: 12rem;
+    height: 12rem;
+    border-right:1rem solid white;
+    border-bottom: 1rem solid white ;
+    text-align: center;
+    font-weight: 400;
+    z-index: 2;
+    display: grid;
+}
+.exp-30 .n30{
+    font-size:4rem;
+    padding: 0%;
+    height: 1rem;
+}
+.exp-30 span{
+    font-size: 2.5rem;
+    padding :10%;
+    height: 1rem;
+}
+.exp-30 .expr{
+    font-size: 1.5rem;
+    height: 1rem;
+    margin-bottom: 10%;
+    
+}
+
+.exp-pic{
+    padding-right: 2rem;
+    margin-left: 10%;
+    margin-top: 0;
+    z-index: -1;
+    
+}
+ .exp-pic-div {
+   background-image: url('./img4.jpg');
+    height: 90%;
+   width: 70%;
+   background-position-x: 70%;
+   margin:1rem;
+   margin-left:18%
+}
+
+
+@media only screen and (max-width: 961px) {
+   .exp-grid{
+    display: grid;
+    grid-template-columns:1fr;
+    padding:4%
+
+
+
+   }
+
+.exp-pic-div{
+    margin: 0%;
+    height: 500px;
+    width: 350px;
+    
+}
+   
+   .sp{
+    padding: 4%;
+    padding-right: 23%;
+
+    top:50rem;
+    
+   }
+  .sp-serv{
+    grid-template-columns:1fr;
+    text-align: left;
+    grid-gap:10px ;
+
+  
+
+    
+  }
+  
+}
