@@ -1,11 +1,19 @@
-import React from 'react'
+import React, {useEffect}from 'react'
 import './Leading.css'
 import imageof from'./leading-image.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Leading = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+
+
+}, []);
   return (
-    <div className='Leading-start'>
-        <div className='Leading-texts'>
+    <div className='Leading-start' >
+        <div className='Leading-texts' data-aos="slide-right"  data-aos-once="true">
             <p className='H2-text'>We are one of the Leading Construction Company in Bangalore</p>
           
                 <p className='for-font-life'><span>&#8226;</span> Experts in building Residential & Commercial Properties</p>
@@ -15,7 +23,7 @@ const Leading = () => {
                 <p className='for-font-life'><span>&#8226;</span> Excellent Customer Support</p>
                
         </div>
-        <div className='Leading-pic'>
+        <div className='Leading-pic' data-aos="zoom-out-left"  data-aos-once="true">
             <img src={imageof} alt=""  className='Leading-pic-img'/>
                 
             </div>

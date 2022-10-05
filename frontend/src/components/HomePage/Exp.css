@@ -17,8 +17,27 @@
    margin-top:30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
+
 
 }
+
+.exp-grid:after{
+    content: '';
+    background-image: url('https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png');
+    background-repeat: no-repeat;
+    background-size: 700px;
+    position: absolute;
+    left: 40rem;
+    top: 50px;
+    opacity: 0.4;
+    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  
+  }
+  
 .about-div{
     border-left: 0.5rem solid  #fda12b;
     padding-left: 2rem;
@@ -144,4 +163,21 @@
     
   }
   
+}
+@media screen and (max-width: 961px){
+    .exp-grid:after{
+        content: '';
+        background-image: url('https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png');
+        background-repeat: no-repeat;
+        background-size: 100px;
+        position: absolute;
+        left: 50rem; 
+        /* top: 500px; */
+        /* opacity: 0.6;
+        
+        /* width: 100%;
+        height: 100%; */
+        z-index: -1;
+      
+      }
 }

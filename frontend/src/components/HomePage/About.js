@@ -14,14 +14,14 @@ const About = () => {
   return (
     <div className="container-about" >
         <div className="grid" >
-          <div className="grid-ele1" data-aos="slide-right" >
+          <div className="grid-ele1" data-aos="slide-right"  data-aos-once="true" >
             <div className="grid-title">01</div>
             <div className="grid-desc">
               <h2>Construction</h2>
               our workforce and associates strive to achieve excellence in every aspect of development to enhance quality of living for our customers.
             </div>
           </div>
-          <div className="grid-ele2" data-aos="slide-left">
+          <div className="grid-ele2" data-aos="slide-left"  data-aos-once="true">
             <div className="grid-title">02</div>
             <div className="grid-desc">
               <h2>Interior Design</h2>
