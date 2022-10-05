@@ -15,7 +15,7 @@ const Exp = () => {
   return (
     <>
     {" "}
-    <div className="exp-grid" data-aos="slide-up">
+    <div className="exp-grid" data-aos="slide-up" data-aos-once="true">
       <div className="exp-pic-div">
         
           {" "}
