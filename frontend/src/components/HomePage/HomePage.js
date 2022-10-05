@@ -2,15 +2,16 @@ import React from 'react'
 import Cards from './Cards'
 
 import Slider from './Slider/Slider'
-import Header from './Header'
+
 import About from './About'
 import Exp from './Exp'
-
+import Leading from './leading-cons/Leading'
 function HomePage(props) {
   
   return (
     <>
      <Slider/>
+     <Leading/>
      
   
      <Exp/>

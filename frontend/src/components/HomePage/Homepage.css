@@ -142,4 +142,13 @@ a:hover {
       left: 0;
     }
   }
+  
+  .popout-logo-start-img{
+    height: 180px;
+  }
+}
+
+.form-submit-one{
+  margin-top: 200px;
+  
 }

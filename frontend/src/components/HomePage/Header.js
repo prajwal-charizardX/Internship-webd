@@ -3,10 +3,13 @@ import "./Homepage.css";
 import { CSSTransition } from "react-transition-group";
 // import classNames from 'classnames';
 import logo from "./panchami-enlarged-black.png";
+import cloth from './cropped-cloth.jpg'
 
 
-import { BsMenuButtonWide } from "react-icons/bs";
-import React, { useState,useEffect } from "react";
+import { FiMenu } from "react-icons/fi";
+import React, { useState
+  // ,useEffect
+ } from "react";
 function Header() {
     let navigate=useNavigate()
   const handleClick = () => {
@@ -17,17 +20,18 @@ function Header() {
     setsidebar(false);
     console.log("pressed");
   };
+  // eslint-disable-next-line
   const [storage, setstorage] = useState(localStorage.getItem("token"));
 
   
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const item = localStorage.getItem("token");
+  //   const item = localStorage.getItem("token");
    
   
     
-  }, [storage]);
+  // }, [storage]);
 
 
   const [sidebar, setsidebar] = useState(false);
@@ -42,7 +46,7 @@ function Header() {
           <div className="inner-header">
             <img src={logo} alt="" className="header-logo" />
             <div className="burger-name">
-              <BsMenuButtonWide
+              <FiMenu
                 size="2rem"
                 className="try"
                 onClick={handleClick}
@@ -84,8 +88,12 @@ function Header() {
               classNames="slide-in-left"
             >
               <div className="reactive-header">
+              <div className="popout-logo-start">
+                <img src={cloth} alt="" className=" popout-logo-start-img" />
+
+              </div>
                 <div className="reactive-header-tags">
-                  <li>
+                  <li className="border-trial">
                     <Link to="/" className="header-li">
                       Home
                     </Link>
@@ -106,7 +114,9 @@ function Header() {
                     </Link>
                   </li>
                 </div>
+                
               </div>
+              
             </CSSTransition>
           ) : null}
 

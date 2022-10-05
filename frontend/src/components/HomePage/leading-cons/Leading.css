@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+.Leading-start{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 22rem;
+}
+
+.Leading-pic{
+    margin-left: 20px;
+    height: 200px;
+    width: 40vw;
+}
+.Leading-pic-img {
+  max-width: 100%;
+}
+.texts-ul{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.Leading-texts{
+    height: 200px;
+    width: 50vw;
+}
+.H2-text{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+
+}
+
+
+.for-font-life{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+} 
+
+
+@media screen and (max-width: 961px){
+    .Leading-start{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+    }
+    .Leading-texts{
+        height: 400px;
+        width: 78vw;
+    }
+    .for-font-life{
+        font-family: "Roboto", sans-serif;
+        font-size: 3vw;
+    } 
+    .H2-text{
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 4vw;
+        width: 100%;
+    
+    }
+    .Leading-pic {
+        margin-left: 20px;
+        height: 166px;
+        width: 61vw;
+        margin-bottom: 2rem;
+    }
+    
+
+}
