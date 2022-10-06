@@ -33,7 +33,7 @@ const Projects = (props) => {
   
   };
   return (
-   
+     
       <div className="Project-start">
         <div >Ongoing/Finished Projects</div>
         <div className="image-div">
@@ -43,5 +43,6 @@ const Projects = (props) => {
       </div>
   )
 }
+
 
 export default Projects;
