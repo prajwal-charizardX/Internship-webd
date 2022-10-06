@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+#heading{
+    color: black;
+    font-family: 'Poppins', sans-serif;
 
+    text-align: center;
+    font-size: 7vw;
+    padding-top: 10%;
+    
+    
+}
+.about{
+
+}
 .au{
-   padding-top: 10%;
+   padding-top: 5%;
    height: 40rem;
    font-family: 'Poppins', sans-serif;
    display: grid;
    grid-template-columns: 1fr 1fr;
  
-
-
 }
+
 .au h3{
     color:rgba(0, 0, 0, 0.589);
 }
@@ -56,10 +67,13 @@
 }
 @media only screen and (max-width: 768px) {
   
-  
+  #heading{
+    padding-top: 25%;
+    font-size: 10vw;
+  }
   
     .au{  
-    padding-top: 20%;    
+    padding-top: 10%;    
     display: grid;
     grid-template-columns: 1fr ;
     height: 60rem

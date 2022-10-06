@@ -12,7 +12,10 @@ const AboutUs = () => {
 }, []);
   return (
     <>
+  <h1 id='heading'>About us
+    </h1>
     <div className='au'>
+   
       <center>
       <div className='au-pic'>
        
