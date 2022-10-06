@@ -1,11 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Special.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Special = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+
+}, []);
   return (
     <>
     {" "}
+<<<<<<< HEAD
     <div className="sp-grid" data-aos="slide-up">
+=======
+    <div className="exp-grid" data-aos="slide-right">
+>>>>>>> 8421eeae877b1c7dee49674b5951f5cd048e153b
       
       <div className="sp">
         <div className="sp-div">
