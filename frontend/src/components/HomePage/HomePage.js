@@ -1,8 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
-
 import Slider from './Slider/Slider'
-
 import About from './About'
 import Exp from './Exp'
 import Leading from './leading-cons/Leading'
@@ -23,10 +21,6 @@ function HomePage(props) {
 
      
   
-     <Exp/>
-
-     <About/>
-     <Cards setloader={props.setloader} />
      <Special/>
      
    

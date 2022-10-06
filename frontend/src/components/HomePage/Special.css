@@ -11,7 +11,7 @@
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
-.exp-grid{
+.sp-grid{
     font-family: 'Poppins', sans-serif;
 
    margin-top:30px;
@@ -22,6 +22,8 @@
 .sp-div{
     border-left: 0.5rem solid  #fda12b;
     padding-left: 2rem;
+    background-image: url('https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png');
+
 }
 .sp{
     padding-left: 3rem ;
@@ -74,7 +76,7 @@
 #sp{
     color:aliceblue;
     font-family: 'Poppins', sans-serif;
-    
+  
     margin-bottom: 10px;
     background-color: #fda12b;
     width: 12rem;
@@ -110,7 +112,7 @@
     z-index: -1;
     
 }
- .exp-pic-div {
+ .sp-pic-div  {
    background-image: url('./img4.jpg');
     height: 90%;
    width: 70%;

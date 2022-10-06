@@ -5,7 +5,7 @@ const Special = () => {
   return (
     <>
     {" "}
-    <div className="exp-grid" data-aos="slide-up">
+    <div className="sp-grid" data-aos="slide-up">
       
       <div className="sp">
         <div className="sp-div">
@@ -21,7 +21,7 @@ const Special = () => {
           <div className="sp-serv-ch"><i id='subcontract' class="fa-solid fa-handshake-slash"></i><div id='subexp'>No Subcontracting</div></div>
   </div>
       </div>
-      <div className="exp-pic-div">
+      <div className="sp-pic-div">
         
           {" "}
           <div className="exp-30" id='sp'>
