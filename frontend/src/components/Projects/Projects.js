@@ -221,6 +221,7 @@ const Projects = (props) => {
         })}
       </div>
     </div>
+    </div>
   );
 };
 
