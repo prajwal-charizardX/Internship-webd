@@ -111,11 +111,12 @@ const Projects = (props) => {
 
     const json = await response.json();
     setcontent(json)
+    console.log("here is the data")
     
   
   };
   return (
-    <div className="card-start">
+    <div className="card-start rando">
     
       
     <button
@@ -205,6 +206,7 @@ const Projects = (props) => {
           </div>
         </div>
       </div>
+      </div>
       <div className="Our-services">
         <div className="Our-services-orange"></div>
         <div className="Our-services-text">
@@ -215,12 +217,13 @@ const Projects = (props) => {
           </p>
         </div>
       </div>
-      <div className="flex-box">
+      <div className="projects-box">
         {content.map((e) => {
           return <Project data={e} key={e.id} deletecard={HandleDelete} />;
         })}
       </div>
     </div>
+    
   );
 };
 
