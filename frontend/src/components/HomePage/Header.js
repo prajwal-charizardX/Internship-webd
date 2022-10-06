@@ -99,17 +99,17 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" className="header-li">
+                    <Link to="/About" className="header-li">
                       About Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="/AboutUs" className="header-li">
+                    <Link to="/Contact" className="header-li">
                       Contact Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" className="header-li">
+                    <Link to="/Projects" className="header-li">
                       Projects
                     </Link>
                   </li>

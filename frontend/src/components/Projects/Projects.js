@@ -118,7 +118,7 @@ const Projects = (props) => {
   return (
     <div className="card-start rando">
     
-      
+      {localStorage.getItem('token')?
     <button
       type="button"
       className="btn btn-primary"
@@ -126,7 +126,7 @@ const Projects = (props) => {
       data-bs-target="#exampleModal"
     >
       Add Events
-    </button>
+    </button>:null}
 
     <div
       className="modal fade"
@@ -207,16 +207,7 @@ const Projects = (props) => {
         </div>
       </div>
       </div>
-      <div className="Our-services">
-        <div className="Our-services-orange"></div>
-        <div className="Our-services-text">
-          <span className="about-span">ABOUT US</span>
-          <p>
-            Constructions and <br />
-            Renovation Solutions{" "}
-          </p>
-        </div>
-      </div>
+      <div className="Contact-us-1 projects-con"  >Ongoing/Finished Projects</div>
       <div className="projects-box">
         {content.map((e) => {
           return <Project data={e} key={e.id} deletecard={HandleDelete} />;
