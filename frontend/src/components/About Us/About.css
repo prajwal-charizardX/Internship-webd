@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+.au{
+   padding-top: 10%;
+   height: 40rem;
+   font-family: 'Poppins', sans-serif;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ 
+
+
+}
+.au h3{
+    color:rgba(0, 0, 0, 0.589);
+}
+.au-pic {
+    background-image: url('img4.jpg');
+
+    height: 25rem;
+    width: 25rem;
+    
+    border-radius: 100%;
+}
+.vision-ex{
+    text-align: left;
+    padding-left: 2rem;
+  
+    border-left:5px solid #fda12b
+}
+.vision h2{
+    color: #999999;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    border-left:5px solid #fda12b
+
+}
+.vision{
+    padding :2rem
+}
+.vision h3{
+    margin-top: 10%;
+    padding: 2rem;
+    color: #fda12b;
+    text-align: center;
+    border: 2px solid #fda12b ;
+    
+
+}
+.vision h3:hover{
+    letter-spacing: 1px;
+    background-color: #fda12b;
+    color: white;
+
+}
+@media only screen and (max-width: 768px) {
+  
+  
+  
+    .au{  
+    padding-top: 20%;    
+    display: grid;
+    grid-template-columns: 1fr ;
+    height: 60rem
+}
+.au-pic {
+    background-image: url('img4.jpg');
+
+    height: 20rem;
+    width: 20rem;
+
+    border-radius: 100%;
+}
+}
