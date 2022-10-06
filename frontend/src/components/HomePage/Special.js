@@ -12,7 +12,7 @@ const Special = () => {
   return (
     <>
     {" "}
-    <div className="exp-grid" data-aos="slide-right">
+    <div className="sp-grid" data-aos="slide-right">
       
       <div className="sp">
         <div className="sp-div">

@@ -123,7 +123,7 @@
 
 
 @media only screen and (max-width: 961px) {
-   .exp-grid{
+   .sp-grid{
     display: grid;
     grid-template-columns:1fr;
     padding:4%
@@ -132,7 +132,7 @@
 
    }
 
-.exp-pic-div{
+.sp-pic-div{
     
     margin: 0%;
     height: 27rem;
