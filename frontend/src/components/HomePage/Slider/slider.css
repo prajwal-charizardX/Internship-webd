@@ -24,8 +24,8 @@ h5 {
 @media screen and (max-width:961px){
   .d-block{
     width: 100vw;
-    height: 250px;
-    margin-top: 150px;
+    height: 45vh;
+    padding-top: 10px;
   }
 
 
