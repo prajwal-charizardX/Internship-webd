@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import "./Project.css";
 import Project from "./Project";
-
+import {Helmet} from 'react-helmet-async';
 
 const initial=[]
 const host = "http://localhost:5000";
@@ -116,6 +116,12 @@ const Projects = (props) => {
   
   };
   return (
+    <>
+     <Helmet>
+      <title>About Us</title>
+      <meta name="description" content="Welcome to the Projects page of  Panchami Associates,We are one of the Leading Construction Company in Bangalore,here are the finished and ongoing projects of our company" />
+      <link rel="canonical" href="/About" />
+    </Helmet>
     <div className="card-start rando">
     
       {localStorage.getItem('token')?
@@ -214,6 +220,7 @@ const Projects = (props) => {
         })}
       </div>
     </div>
+    </>
     // djwndwndwnwndnwdnwdjwjd
   );
 };

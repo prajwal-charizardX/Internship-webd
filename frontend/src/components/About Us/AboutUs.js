@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './About.css'
-
+import {Helmet} from 'react-helmet-async';
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -12,6 +12,11 @@ const AboutUs = () => {
 }, []);
   return (
     <>
+       <Helmet>
+      <title>About Us</title>
+      <meta name="description" content="Welcome to the About us page of  Panchami Associates,We are one of the Leading Construction Company in Bangalore, Experts in building Residential & Commercial Properties" />
+      <link rel="canonical" href="/About" />
+    </Helmet>
     <div className='au'>
       <center>
       <div className='au-pic'>

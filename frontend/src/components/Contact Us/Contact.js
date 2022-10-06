@@ -3,6 +3,7 @@ import { FcPhone } from "react-icons/fc";
 import "./Contact.css";
 import { BiCurrentLocation } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
+import {Helmet} from 'react-helmet-async';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 const Contact = () => {
@@ -12,6 +13,12 @@ const Contact = () => {
 
 }, []);
   return (
+    <>
+      <Helmet>
+      <title>Contact Us</title>
+      <meta name="description" content="Welcome to the Contact Us page of  Panchami Associates,We are one of the Leading Construction Company in Bangalore, you can call us anytime 24/7 " />
+      <link rel="canonical" href="/About" />
+    </Helmet>
     <div className="Contact-us-start">
       <div className="Contact-us-1">Contact Us</div>
       <div className="flex-for-map"  >
@@ -63,6 +70,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -32,6 +32,9 @@ function Header() {
   
     
   // }, [storage]);
+  const goToTop = () => {
+    this.scroll.scrollTo({x: 0, y: 0, animated: true});
+ }
 
 
   const [sidebar, setsidebar] = useState(false);
@@ -94,22 +97,22 @@ function Header() {
               </div>
                 <div className="reactive-header-tags">
                   <li className="border-trial">
-                    <Link to="/" className="header-li">
+                    <Link to="/" className="header-li" onClick={closeClick}>
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link to="/About" className="header-li">
+                    <Link to="/About" className="header-li" onClick={closeClick}>
                       About Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Contact" className="header-li">
+                    <Link to="/Contact" className="header-li" onClick={closeClick}>
                       Contact Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Projects" className="header-li">
+                    <Link to="/Projects" className="header-li " onClick={closeClick}>
                       Projects
                     </Link>
                   </li>
