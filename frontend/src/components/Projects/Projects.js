@@ -2,24 +2,106 @@ import React, { useEffect, useState, useRef } from "react";
 import { getStorage, ref, uploadBytes,getDownloadURL } from "firebase/storage";
 import './Project.css'
 import Project from "./Project";
+
+
+const initial=[]
+const host = "http://localhost:5000";
 const Projects = (props) => {
-  const initial=[{
-    "title":"villa"
-  }]
   const [content, setcontent] = useState(initial)
+  const [image, setimage] = useState("")
+  const handleFile=(e)=>{
+    if(e.target.files && e.target.files.length===1)
+     {
+      setimage(e.target.files[0])
+     }
+  }
+  const CreateUpload=(e)=>{
+    e.preventDefault();
+    try{
+      const storage = getStorage();
+      console.log("1")
+    const storageRef = ref(storage, `projects/${image.name}`);
+    console.log("2")
+
+    
+    uploadBytes(storageRef, image).then(() => {
+      
+  
+      
+      getDownloadURL(storageRef).then((url) => {
+        console.log("4")
+        setimage(url);
+        console.log(url)
+      })
+
+     
+      console.log("here is the url");
+    });
+
+
+    }catch(e){
+      console.log(e.message)
+    }
+    
+  }
+  const refClose= useRef()
+  const [arr, setarr] = useState({title:""})
+
+  const handleChange=(e)=>{
+    setarr({
+      ...arr,[e.target.name]:e.target.value
+    })
+
+
+  }
   useEffect(() => {
   
     GetAllData()
-  
-  
     
   }, [content])
- 
-  const host = "http://localhost:5000";
+  const handleClick = async (e) => {
+    const response = await fetch(`${host}/projects/add`, {
+      method: "POST",
+      //   real
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title: arr.title,
 
+        image: image,
+    
+       
+      }),
+      
+    });
+    
+    console.log(arr.title)
+    console.log(image )
+
+    const json = await response.json();
+    console.log(json)
+    setcontent(content.concat(json));
+    refClose.current.click();
+  };
  
+
+
+  const HandleDelete = async (id) => {
+    const response = await fetch(`${host}/projects/delete/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    await response.json();
+    const sort = content.filter((e) => {
+      return e._id !== id;
+    });
+    setcontent(sort);
+  };
   const GetAllData = async (e) => {
-    const response = await fetch(`${host}/projects/getalldata`, {
+    const response = await fetch(`${host}/projects/getdata`, {
       method: "GET",
       //   real
       headers: {
@@ -30,13 +112,13 @@ const Projects = (props) => {
 
     const json = await response.json();
     setcontent(json)
-    props.setloader(false)
+    
   
   };
   return (
     <div className="card-start">
-    {
-      localStorage.getItem('token')?
+    
+      
     <button
       type="button"
       className="btn btn-primary"
@@ -44,7 +126,7 @@ const Projects = (props) => {
       data-bs-target="#exampleModal"
     >
       Add Events
-    </button>:null}
+    </button>
 
     <div
       className="modal fade"
@@ -80,15 +162,7 @@ const Projects = (props) => {
                 minLength={3}
                 required
               />
-              <label htmlFor="post">Event description</label>
-              <textarea
-                name="description"
-                className="form-control"
-                id="description"
-                onChange={handleChange}
-                minLength={3}
-                required
-              />
+           
 
               <label htmlFor="post">Input file</label>
               <input
@@ -103,7 +177,7 @@ const Projects = (props) => {
               />
               <div>
                 <button onClick={CreateUpload}>Upload</button>
-                <Loader isloading={loading} />
+                
               </div>
             </div>
           </form>
@@ -121,9 +195,9 @@ const Projects = (props) => {
               className="btn btn-primary"
               onClick={handleClick}
               disabled={
-                loading === true ||
+               
                 image.length === 0 ||
-                title.description.length < 5 
+                arr.title.length < 5 
                 // title.name.length < 2
               }
             >
