@@ -9,7 +9,7 @@ app.use(express.json())
 
 app.use('/user',require('./routes/forhomepage'))
 app.use('/card',require('./routes/foraddingcards'))
-
+app.use('/projects',require('./routes/projects'))
 
 app.listen(PORT,()=>{
     console.log(`Example app listening on port http://localhost:${PORT}`)
