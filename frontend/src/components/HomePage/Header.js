@@ -20,6 +20,12 @@ function Header() {
     setsidebar(false);
     console.log("pressed");
   };
+
+  const gotop=()=>{
+    setsidebar(false);
+    window.reload()
+    
+  }
   // eslint-disable-next-line
   const [storage, setstorage] = useState(localStorage.getItem("token"));
 
@@ -97,22 +103,22 @@ function Header() {
               </div>
                 <div className="reactive-header-tags">
                   <li className="border-trial">
-                    <Link to="/" className="header-li" onClick={closeClick}>
+                    <Link to="/" className="header-li" onClick={gotop}>
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link to="/About" className="header-li" onClick={closeClick}>
+                    <Link to="/About" className="header-li" onClick={gotop}>
                       About Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Contact" className="header-li" onClick={closeClick}>
+                    <Link to="/Contact" className="header-li" onClick={gotop}>
                       Contact Us
                     </Link>
                   </li>
                   <li>
-                    <Link to="/Projects" className="header-li " onClick={closeClick}>
+                    <Link to="/Projects" className="header-li " onClick={gotop}>
                       Projects
                     </Link>
                   </li>
