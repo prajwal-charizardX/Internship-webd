@@ -12,11 +12,7 @@ const Special = () => {
   return (
     <>
     {" "}
-<<<<<<< HEAD
-    <div className="sp-grid" data-aos="slide-up">
-=======
     <div className="exp-grid" data-aos="slide-right">
->>>>>>> 8421eeae877b1c7dee49674b5951f5cd048e153b
       
       <div className="sp">
         <div className="sp-div">
