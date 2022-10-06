@@ -7,6 +7,11 @@ const Contact = () => {
   return (
     <div className="Contact-us-start">
       <div className="Contact-us-1">Contact Us</div>
+      <div className="flex-for-map">
+      <div className="gmap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.047301679199!2d77.63401751413578!3d13.03265981706336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173eb25d0cb3%3A0xce63f74434e71bc1!2sSMR%20Vinay%20Crescent%2C%201st%20Main%20Rd%2C%20HBR%20Layout%204th%20Block%2C%20HBR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560043!5e0!3m2!1sen!2sin!4v1664971508675!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="maps-for-panchami"></iframe>
+      </div>
+      <div className="div-for-flex">
       <div className="Contact-us-2">
         <FcPhone size="3rem" className="try" />
         <div className="Contact-us-2-sub">
@@ -39,12 +44,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="Contact-us-1 test-ham" >
-        Our Location 
       </div>
-      <div className="gmap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.047301679199!2d77.63401751413578!3d13.03265981706336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173eb25d0cb3%3A0xce63f74434e71bc1!2sSMR%20Vinay%20Crescent%2C%201st%20Main%20Rd%2C%20HBR%20Layout%204th%20Block%2C%20HBR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560043!5e0!3m2!1sen!2sin!4v1664971508675!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+     
+      
     </div>
   );
 };

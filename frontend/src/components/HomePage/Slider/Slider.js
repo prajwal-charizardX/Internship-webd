@@ -32,8 +32,6 @@ function Slider() {
       <div class="carousel-item">
         <img src={Pic3} class="d-block w-95" alt="..." height={500}/>
         <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p>.</p>
         </div>
       </div>
     </div>
