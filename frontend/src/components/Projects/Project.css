@@ -1,13 +1,13 @@
 .Project-start {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  /* padding-top: 150px; */
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 4vw;
   align-items: center;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 .image-div {
   height: 3rem;
