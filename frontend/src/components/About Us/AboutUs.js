@@ -17,7 +17,10 @@ const AboutUs = () => {
       <meta name="description" content="Welcome to the About us page of  Panchami Associates,We are one of the Leading Construction Company in Bangalore, Experts in building Residential & Commercial Properties" />
       <link rel="canonical" href="/About" />
     </Helmet>
+  <h1 id='heading'>About us
+    </h1>
     <div className='au'>
+   
       <center>
       <div className='au-pic'>
        
