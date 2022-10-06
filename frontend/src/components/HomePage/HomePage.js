@@ -7,11 +7,9 @@ import About from './About'
 import Exp from './Exp'
 import Leading from './leading-cons/Leading'
 import Special from './Special'
-import Slider from "./Slider/Slider";
-import { Scrollbars } from "react-custom-scrollbars-2";
-import About from "./About";
-import Exp from "./Exp";
-import Leading from "./leading-cons/Leading";
+
+
+
 function HomePage(props) {
   return (
     <>

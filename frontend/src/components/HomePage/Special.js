@@ -24,7 +24,7 @@ const Special = () => {
       <div className="exp-pic-div">
         
           {" "}
-          <div className="exp-30">
+          <div className="exp-30" id='sp'>
             <span className="n30">30</span><span>Years</span>
             <span className="expr">Experience</span>
           </div>{" "}
