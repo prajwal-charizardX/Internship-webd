@@ -84,7 +84,7 @@ async (req, res) => {
       description: description,
       image: image,
     });
-    console.log(title + description + image);
+    
     res.status(200).send({ msg: "sucessfully sent " });
   } catch (e) {
     res.status(500).send({ error: e.message });

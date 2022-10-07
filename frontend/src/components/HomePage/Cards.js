@@ -35,27 +35,23 @@ function Cards(props) {
     e.preventDefault();
     try{
       const storage = getStorage();
-      console.log("1")
     const storageRef = ref(storage, `Card/${image.name}`);
-    console.log("2")
     setloading(true);
     
     uploadBytes(storageRef, image).then((snapshot) => {
-      console.log("3")
   
       
       getDownloadURL(storageRef).then((url) => {
-        console.log("4")
         setimage(url);
       })
 
       setloading(false);
-      console.log("here is the url");
+      
     });
 
 
     }catch(e){
-      console.log(e.message)
+      
     }
     
   };
@@ -79,12 +75,12 @@ function Cards(props) {
       }),
       
     });
-    console.log(title.description )
-    console.log(title.title)
-    console.log(image )
+    
+    
+    
 
     const json = await response.json();
-    console.log(json)
+    
     setcontent(content.concat(json));
     refClose.current.click();
   };

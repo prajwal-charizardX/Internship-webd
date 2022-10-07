@@ -10,7 +10,7 @@ const Login = () => {
     const [data, setdata] = useState({email:"",password:""})
     const onChange=(e)=>{
         setdata({...data,[e.target.name]:e.target.value})
-        console.log(data)
+        
     }
 
     const handleSubmit=async(e)=>{
@@ -32,13 +32,13 @@ const Login = () => {
                  
             })
             const json = await response.json();
-            console.log(json)
+            
             if (json.success) {
                 // localStorage.setItem("token", json.authtoken);
           
           
-                console.log("signed in sucesfully");
-                console.log(json.authtoken)
+                
+                
                 
                 localStorage.setItem("token", json.authtoken)
                 nav('/');
@@ -48,7 +48,7 @@ const Login = () => {
                 
               }
         }catch(e){
-            console.log(e.message)
+            
         }
        
 

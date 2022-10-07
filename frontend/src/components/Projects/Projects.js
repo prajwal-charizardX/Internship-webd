@@ -19,9 +19,9 @@ const Projects = (props) => {
     e.preventDefault();
     try{
       const storage = getStorage();
-      console.log("1")
+      
     const storageRef = ref(storage, `projects/${image.name}`);
-    console.log("2")
+    
 
     
     uploadBytes(storageRef, image).then(() => {
@@ -29,18 +29,18 @@ const Projects = (props) => {
   
       
       getDownloadURL(storageRef).then((url) => {
-        console.log("4")
+        
         setimage(url);
-        console.log(url)
+        
       })
 
      
-      console.log("here is the url");
+      
     });
 
 
     }catch(e){
-      console.log(e.message)
+      
     }
     
   }
@@ -76,11 +76,11 @@ const Projects = (props) => {
       
     });
     
-    console.log(arr.title)
-    console.log(image )
+    
+    
 
     const json = await response.json();
-    console.log(json)
+    
     setcontent(content.concat(json));
     refClose.current.click();
   };
@@ -111,7 +111,7 @@ const Projects = (props) => {
 
     const json = await response.json();
     setcontent(json)
-    console.log("here is the data")
+    
     
   
   };

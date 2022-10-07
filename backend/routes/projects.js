@@ -24,7 +24,6 @@ router.get(
 
       
     } catch (err) {
-      console.log("dhg")
       res.json(alldata);
 
     }
@@ -38,7 +37,6 @@ router.post("/add", async (req, res) => {
       title: title,
       image: image,
     });
-    console.log(title + image);
     res.status(200).send({ msg: "sucessfully sent " });
   } catch (e) {
     res.status(500).send({ error: e.message });

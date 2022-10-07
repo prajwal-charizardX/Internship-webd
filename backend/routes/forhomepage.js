@@ -32,10 +32,8 @@ router.post(
       const { email, password, name } = req.body;
       const data = email;
       const salt = 10;
-      console.log(salt);
 
       const encrypt = await bcrypt.hash(password, salt);
-      console.log(encrypt);
 
       const Users = db.collection("users");
 
@@ -44,7 +42,6 @@ router.post(
         email: email,
         password: encrypt,
       });
-      console.log("this is the id " + user.id);
 
       const jwtdata = {
         user: {
@@ -53,7 +50,6 @@ router.post(
       };
 
       const authtoken = jwt.sign(jwtdata, JWT_SECRET);
-      console.log(authtoken);
       res.json({ authtoken });
     } catch (error) {
       res.status(500).send({ msg: error.message });
@@ -90,7 +86,6 @@ router.post(
         return res.status(400).json({ error: "Please try to login again " });
       }
       snapshot.forEach((doc) => {
-        console.log(doc.data().password);
         new_pass = doc.data().password;
         new_id = doc.id;
       });
@@ -99,7 +94,6 @@ router.post(
       if (!compare) {
         return res.status(400).json({ error: "Please try to login again" });
       }
-      console.log("logged in ");
       const data = {
         user: {
           id: new_id,
@@ -107,7 +101,6 @@ router.post(
       };
       const authtoken = jwt.sign(data, JWT_SECRET);
       success=true
-      console.log(authtoken);
 
       res.json({ success,authtoken });
     } catch (error) {

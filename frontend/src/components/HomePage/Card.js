@@ -4,7 +4,6 @@ import {BiPencil} from "react-icons/bi";
 const Card = (props) => {
     const{id,image,description,title}=props.data
     const handleClick=()=>{
-        console.log(id)
         props.deletecard(id)
     }
  

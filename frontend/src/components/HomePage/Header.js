@@ -14,11 +14,11 @@ function Header() {
     let navigate=useNavigate()
   const handleClick = () => {
     setsidebar(true);
-    console.log("pressed");
+    
   };
   const closeClick = () => {
     setsidebar(false);
-    console.log("pressed");
+    
   };
 
   const gotop=()=>{
