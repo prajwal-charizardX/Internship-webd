@@ -20,7 +20,7 @@ const Contact = () => {
       <link rel="canonical" href="/About" />
     </Helmet>
     <div className="Contact-us-start">
-      <div className="Contact-us-1">Contact Us</div>
+      <div className="Contact-us-1 heroku-da">Contact Us</div>
       <div className="flex-for-map"  >
         <div className="gmap" >
           <iframe
@@ -36,19 +36,19 @@ const Contact = () => {
         </div>
         <div className="div-for-flex" data-aos="slide-left"  data-aos-once="true">
           <div className="Contact-us-2">
-            <FcPhone size="3rem" className="try" />
+            <FcPhone size="3rem" className="taunt" />
             <div className="Contact-us-2-sub">
-              <div>Name</div>
-              <div>
+              <div className="for-phone-contact-text">Name</div>
+              <div  className=" for-phone-contact-text-2">
                 <a href="tel:9480865676"> 9480865676</a>
               </div>
             </div>
           </div>
           <div className="Contact-us-2">
-            <BiCurrentLocation size="6rem" className="try" />
+            <BiCurrentLocation size="6rem" className="try location" />
             <div className="Contact-us-2-sub">
-              <div>Address</div>
-              <div>
+              <div className="for-phone-contact-text">Address</div>
+              <div className=" for-phone-contact-text-2">
                 <a href="https://goo.gl/maps/nFVBYipL7pFpUaGK8">
                   SMR Vinay Crescent ,1st Main Rd, HBR Layout 4th Block HBR
                   Layout, Bengaluru, Karnataka 560043
@@ -57,10 +57,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="Contact-us-2">
-            <MdEmail size="3rem" className="try" />
+            <MdEmail size="3rem" className="try  email-one" />
             <div className="Contact-us-2-sub">
-              <div>Email</div>
-              <div>
+              <div className="for-phone-contact-text">Email</div>
+              <div  className=" for-phone-contact-text-2-3">
                 <a href="mailto: panchamiassociates@gmail.com">
                   panchamiassociates@gmail.com
                 </a>
