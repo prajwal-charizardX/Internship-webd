@@ -213,7 +213,7 @@ const Projects = (props) => {
         </div>
       </div>
       </div>
-      <div className="Contact-us-1 projects-con"  >Ongoing/Completed projects</div>
+      <div className="Contact-us-1 projects-con my-3"  >Ongoing/Finished Projects</div>
       <div className="projects-box">
         {content.map((e) => {
           return <Project data={e} key={e.id} deletecard={HandleDelete} />;

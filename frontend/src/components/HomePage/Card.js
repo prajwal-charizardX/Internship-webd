@@ -13,7 +13,7 @@ const Card = (props) => {
             <div className='wrap-image'>
             <img
               src={image}
-              alt="worker imave"
+              alt="worker"
 
               
               className="image-card"

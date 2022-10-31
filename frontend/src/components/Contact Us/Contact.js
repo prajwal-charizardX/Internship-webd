@@ -1,8 +1,5 @@
 import React,{useEffect} from "react";
-import { FcPhone } from "react-icons/fc";
 import "./Contact.css";
-import { BiCurrentLocation } from "react-icons/bi";
-import { MdEmail } from "react-icons/md";
 import {Helmet} from 'react-helmet-async';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -36,18 +33,17 @@ const Contact = () => {
         </div>
         <div className="div-for-flex" data-aos="slide-left"  data-aos-once="true">
           <div className="Contact-us-2">
-            <FcPhone size="3rem" className="taunt" />
+            {/* <FcPhone size="3rem" className="taunt" /> */}
+            <i class="fa-solid fa-phone fa-2x"></i>
             <div className="Contact-us-2-sub">
-              <div className="for-phone-contact-text">Name</div>
               <div  className=" for-phone-contact-text-2">
                 <a href="tel:9480865676"> 9480865676</a>
               </div>
             </div>
           </div>
           <div className="Contact-us-2">
-            <BiCurrentLocation size="6rem" className="try location" />
+          <i class="fa-solid fa-location-crosshairs fa-2x"></i>
             <div className="Contact-us-2-sub">
-              <div className="for-phone-contact-text">Address</div>
               <div className=" for-phone-contact-text-2">
                 <a href="https://goo.gl/maps/nFVBYipL7pFpUaGK8">
                   SMR Vinay Crescent ,1st Main Rd, HBR Layout 4th Block HBR
@@ -57,9 +53,9 @@ const Contact = () => {
             </div>
           </div>
           <div className="Contact-us-2">
-            <MdEmail size="3rem" className="try  email-one" />
+          <i class="fa-solid fa-envelope  fa-2x"></i>
             <div className="Contact-us-2-sub">
-              <div className="for-phone-contact-text">Email</div>
+             
               <div  className=" for-phone-contact-text-2-3">
                 <a href="mailto: panchamiassociates@gmail.com">
                   panchamiassociates@gmail.com
