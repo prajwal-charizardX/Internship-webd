@@ -1,8 +1,6 @@
 import React,{useEffect} from 'react';
 // import Pic1 from './pics/0ad2396d-be8c-4970-b4f4-bfff04dac5d6.jpg'
-import Pic2 from './pics/pic2.webp'
-import Pic3 from './pics/Pic3.jpg'
-import Picz from './pics/Pic1.webp'
+
 import './slider.css'
 import pic4 from './pics/new-cons.jpg'
 import pic5 from './pics/pic5.jpeg'
@@ -38,11 +36,7 @@ function Slider() {
           <p>3d elevation and structural design,planning</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src={Pic3} class="d-block w-100" alt="..." height={600}/>
-        <div class="carousel-caption d-none d-md-block">
-        </div>
-      </div>
+    
     </div>
     </center>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

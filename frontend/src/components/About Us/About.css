@@ -10,9 +10,9 @@
     
     
 }
-.about{
 
-}
+
+
 .au{
    padding-top: 5%;
    height: 40rem;
@@ -26,13 +26,22 @@
     color:rgba(0, 0, 0, 0.589);
 }
 .au-pic {
-    background-image: url('img4.jpg');
+    width: 42vw;
+}
+.image-of-life{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .au-pic {
+    background-image: url('./panchamired.webp');
 
     height: 25rem;
     width: 25rem;
     
-    border-radius: 100%;
-}
+   
+} */
 .vision-ex{
     text-align: left;
     padding-left: 2rem;
@@ -78,12 +87,15 @@
     grid-template-columns: 1fr ;
     height: 60rem
 }
-.au-pic {
-    background-image: url('img4.jpg');
+/* .au-pic {
+    background-image: url('./panchamired.webp');
 
     height: 20rem;
     width: 20rem;
 
-    border-radius: 100%;
+  
+} */
+.au-pic {
+    width: 79vw;
 }
 }
