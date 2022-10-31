@@ -12,6 +12,6 @@ app.use('/card',require('./routes/foraddingcards'))
 app.use('/projects',require('./routes/projects'))
 
 app.listen(PORT,()=>{
-    
+    console.log("we are onlinee")
 
 })

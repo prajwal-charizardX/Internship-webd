@@ -118,7 +118,7 @@ const Projects = (props) => {
   return (
     <>
      <Helmet>
-      <title>About Us</title>
+      <title>Projects</title>
       <meta name="description" content="Welcome to the Projects page of  Panchami Associates,We are one of the Leading Construction Company in Bangalore,here are the finished and ongoing projects of our company" />
       <link rel="canonical" href="/About" />
     </Helmet>
@@ -213,7 +213,7 @@ const Projects = (props) => {
         </div>
       </div>
       </div>
-      <div className="Contact-us-1 projects-con"  >Ongoing/Finished Projects</div>
+      <div className="Contact-us-1 projects-con"  >Ongoing/Completed projects</div>
       <div className="projects-box">
         {content.map((e) => {
           return <Project data={e} key={e.id} deletecard={HandleDelete} />;
