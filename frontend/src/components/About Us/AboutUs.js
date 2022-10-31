@@ -23,6 +23,7 @@ const AboutUs = () => {
       <div className="au">
         <center>
           <div className="au-pic">
+            {/*checkout*/}
             <img src={img45} alt="" className="image-of-life" />
           </div>
          
