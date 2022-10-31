@@ -12,8 +12,8 @@ function Cards(props) {
     GetAllData()
   
   
-    
-  }, [content])
+     // eslint-disable-next-line
+  }, [])
   
   const refClose = useRef();
   const [loading, setloading] = useState(false);
@@ -88,7 +88,7 @@ function Cards(props) {
 
 
   const GetAllData = async (e) => {
-    props.setloader(true)
+   
     const response = await fetch(`${host}/card/getalldata`, {
       method: "GET",
       //   real
@@ -100,7 +100,7 @@ function Cards(props) {
 
     const json = await response.json();
     setcontent(json)
-    props.setloader(false)
+   
   
   };
   

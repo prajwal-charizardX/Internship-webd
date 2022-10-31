@@ -22,10 +22,10 @@ const Special = () => {
         <div className="sp-span  "> We have well experienced and professional team who has deep and flexible knowledge in interior designing services. We provide the most innovative Home interior, Office interior and Commercial interior as best as we could.</div>
 
         <div className="sp-serv">
-          <div className="sp-serv-ch"><i class="fa-solid fa-hourglass-half"></i><div> Timely Delivery</div></div>
-          <div className="sp-serv-ch"><i class="fa-solid fa-sack-dollar"></i><div>No Hidden Charges</div></div>
-          <div className="sp-serv-ch"><i class="fa-solid fa-file-circle-check"></i><div>Construction Guarantee</div></div>
-          <div className="sp-serv-ch"><i id='subcontract' class="fa-solid fa-handshake-slash"></i><div id='subexp'>No Subcontracting</div></div>
+          <div className="sp-serv-ch"><i className="fa-solid fa-hourglass-half"></i><div> Timely Delivery</div></div>
+          <div className="sp-serv-ch"><i className="fa-solid fa-sack-dollar"></i><div>No Hidden Charges</div></div>
+          <div className="sp-serv-ch"><i className="fa-solid fa-file-circle-check"></i><div>Construction Guarantee</div></div>
+          <div className="sp-serv-ch"><i id='subcontract' className="fa-solid fa-handshake-slash"></i><div id='subexp'>No Subcontracting</div></div>
   </div>
       </div>
       <div className="sp-pic-div">

@@ -35,9 +35,9 @@ const Exp = () => {
         To realize this vision, our workforce and associates strive to achieve excellence in every aspect of development to enhance quality of living for our customers.            </div>
         <div className="about-span  "> We have well experienced and professional team who has deep and flexible knowledge in interior designing services. We provide the most innovative Home interior, Office interior and Commercial interior as best as we could.</div>
         <div className="about-serv">
-          <div className="about-serv-ch"><i class="fa-sharp fa-solid fa-check"></i><div> Ontime at services</div></div>
-          <div className="about-serv-ch"> <i class="fa-sharp fa-solid fa-check"></i><div>24/7 hours services</div></div>
-          <div className="about-serv-ch"> <i class="fa-sharp fa-solid fa-check"></i><div>Verified professionals</div></div>
+          <div className="about-serv-ch"><i className="fa-sharp fa-solid fa-check"></i><div> Ontime at services</div></div>
+          <div className="about-serv-ch"> <i className="fa-sharp fa-solid fa-check"></i><div>24/7 hours services</div></div>
+          <div className="about-serv-ch"> <i className="fa-sharp fa-solid fa-check"></i><div>Verified professionals</div></div>
         </div>
       </div>
     </div>
