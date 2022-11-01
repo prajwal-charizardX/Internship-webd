@@ -58,7 +58,7 @@ function Cards(props) {
 
 
 
-  const host = "http://localhost:5000";
+  const host = "https://panchami.vercel.app";
   const handleClick = async (e) => {
     const response = await fetch(`${host}/card/addcard`, {
       method: "POST",

@@ -5,7 +5,7 @@ import Project from "./Project";
 import { Helmet } from "react-helmet-async";
 import Loader from "../loader/Loader";
 const initial = [];
-const host = "http://localhost:5000";
+const host = "https://panchami.vercel.app";
 
 const Projects = (props) => {
   const [loader, setloader] = useState(false);
@@ -43,9 +43,13 @@ const Projects = (props) => {
       [e.target.name]: e.target.value,
     });
   };
+
+
   useEffect(() => {
     GetAllData();
   }, []);
+
+  
   const handleClick = async (e) => {
     const response = await fetch(`${host}/projects/add`, {
       method: "POST",
