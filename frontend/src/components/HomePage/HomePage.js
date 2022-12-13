@@ -12,7 +12,7 @@ function HomePage(props) {
   return (
     <>
     <Helmet>
-      <title>Home Page</title>
+      <title>Panchami Associates</title>
       <meta name="description" content="Welcome to Panchami Associates,We are one of the Leading Construction Company in Bangalore, Experts in building Residential & Commercial Properties" />
       <link rel="canonical" href="/" />
     </Helmet>

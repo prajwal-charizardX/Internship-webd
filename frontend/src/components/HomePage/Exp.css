@@ -1,183 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
-
-.about-span{
-    color: #999999;
-    padding-bottom: 2rem;
-
+.about-span {
+  color: #999999;
+  padding-bottom: 2rem;
 }
-.about-div h1{
-    color:black ;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+.about-div h1 {
+  color: black;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
-.exp-grid{
-    font-family: 'Poppins', sans-serif;
+.exp-grid {
+  font-family: "Poppins", sans-serif;
 
-   margin-top:30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-
-
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.exp-grid:after{
-    content: '';
-    background-image: url('https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png');
-    background-repeat: no-repeat;
-    background-size: 700px;
-    position: absolute;
-    left: 40rem;
-    top: 50px;
-    opacity: 0.4;
-    
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  
-  }
-  
-.about-div{
-    border-left: 0.5rem solid  #fda12b;
-    padding-left: 2rem;
-}
-.about{
-    padding-left: 2rem ;
-    padding-right: 2rem;
-    margin-top: 30px;
-}
-.about-serv{
-    display: grid;
-    border-top:  0.1rem solid #d8d2d2;;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5%;
-    padding-top: 2rem;
+.exp-grid:after {
+  content: "";
+  background-image: url("https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  position: absolute;
+  left: 40rem;
+  top: 50px;
+  opacity: 0.4;
 
-
-
-}
-.about-serv i{
-    color: #fda12b;
-    font-size: 50px;
-    text-align: right;
-    
-}
-.about-serv-ch{
-    display: grid;
-    grid-gap: 7px;
-    grid-template-columns: 1fr 1fr ;
-    margin: 5px;
-
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
-.about-serv div{
-   font-weight: 700;
-   font-size: large;
-
-   
+.about-div {
+  border-left: 0.5rem solid #fda12b;
+  padding-left: 2rem;
+}
+.about {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 30px;
+}
+.about-serv {
+  display: grid;
+  border-top: 0.1rem solid #d8d2d2;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+  padding-top: 2rem;
+}
+.about-serv i {
+  color: #fda12b;
+  font-size: 50px;
+  text-align: right;
+}
+.about-serv-ch {
+  display: grid;
+  grid-gap: 7px;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
 }
 
- 
-
-.exp-30{
-    color:aliceblue;
-    font-family: 'Poppins', sans-serif;
-
-    margin-bottom: 10px;
-    background-color: #fda12b;
-    width: 12rem;
-    height: 12rem;
-    border-right:1rem solid white;
-    border-bottom: 1rem solid white ;
-    text-align: center;
-    font-weight: 400;
-    z-index: 2;
-    display: grid;
-}
-.exp-30 .n30{
-    font-size:4rem;
-    padding: 0%;
-    height: 1rem;
-}
-.exp-30 span{
-    font-size: 2.5rem;
-    padding :10%;
-    height: 1rem;
-}
-.exp-30 .expr{
-    font-size: 1.5rem;
-    height: 1rem;
-    margin-bottom: 10%;
-    
+.about-serv div {
+  font-weight: 700;
+  font-size: large;
 }
 
-.exp-pic{
-    padding-right: 2rem;
-    margin-left: 10%;
-    margin-top: 0;
-    z-index: -1;
-    
+.exp-30 {
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+
+  margin-bottom: 10px;
+  background-color: #fda12b;
+  width: 12rem;
+  height: 12rem;
+  border-right: 1rem solid white;
+  border-bottom: 1rem solid white;
+  text-align: center;
+  font-weight: 400;
+  z-index: 2;
+  display: grid;
 }
- .exp-pic-div {
-   background-image: url('./img1.jpeg') !important;
-    height: 90%;
-   width: 70%;
-   align-items: center  ;
-   margin:1rem;
-   margin-left:11%
+.exp-30 .n30 {
+  font-size: 3rem;
+  padding: 0%;
+  height: 1rem;
+}
+.exp-30 span {
+  font-size: 2.1rem;
+  padding: 10%;
+  height: 1rem;
+}
+.exp-30 .expr {
+  font-size: 1.5rem;
+  height: 1rem;
+  margin-bottom: 19%;
 }
 
+.exp-pic {
+  padding-right: 2rem;
+  margin-left: 10%;
+  margin-top: 0;
+  z-index: -1;
+}
+.exp-pic-div {
+  background-image: url("./img1.jpeg") !important;
+  height: 90%;
+  width: 70%;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 11%;
+}
 
 @media only screen and (max-width: 961px) {
-   .exp-grid{
+  .exp-grid {
     display: grid;
-    grid-template-columns:1fr;
-    padding:4%
+    grid-template-columns: 1fr;
+    padding: 4%;
+  }
 
-
-
-   }
-
-.exp-pic-div{
+  .exp-pic-div {
     margin: 0%;
     height: 27rem;
     width: 91vw;
-    
-}
-   
-   .about{
+  }
+
+  .about {
     padding: 4%;
     padding-right: 23%;
 
-    top:50rem;
-    
-   }
-  .about-serv{
-    grid-template-columns:1fr;
-    text-align: left;
-    grid-gap:10px ;
-
-  
-
-    
+    top: 50rem;
   }
-  
+  .about-serv {
+    grid-template-columns: 1fr;
+    text-align: left;
+    grid-gap: 10px;
+  }
 }
-@media screen and (max-width: 961px){
-    .exp-grid:after{
-        content: '';
-        background-image: url('https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png');
-        background-repeat: no-repeat;
-        background-size: 100px;
-        position: absolute;
-        left: 50rem; 
-        /* top: 500px; */
-        /* opacity: 0.6;
+@media screen and (max-width: 961px) {
+  .exp-grid:after {
+    content: "";
+    background-image: url("https://freepngimg.com/thumb/machine/49911-1-construction-png-file-hd.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    position: absolute;
+    left: 50rem;
+    /* top: 500px; */
+    /* opacity: 0.6;
         
         /* width: 100%;
         height: 100%; */
-        z-index: -1;
-      
-      }
+    z-index: -1;
+  }
 }

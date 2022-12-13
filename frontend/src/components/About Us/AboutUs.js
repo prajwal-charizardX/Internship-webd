@@ -45,6 +45,9 @@ const AboutUs = () => {
               <h3>KNOW OUR WORK</h3>
             </Link>
           </div>
+          <div className="kartik">
+          Website made by <a href="https://github.com/akashgreninja">Akash Uday</a> and <a href="https://github.com/2deadmen">kartik Hegde</a>
+          </div>
         </div>
       </div>
     </>

@@ -14,7 +14,7 @@ const Contact = () => {
       <Helmet>
       <title>Contact Us</title>
       <meta name="description" content="Welcome to the Contact Us page of  Panchami Associates,We are one of the Leading Construction Company in Bangalore, you can call us anytime 24/7 " />
-      <link rel="canonical" href="/About" />
+      <link rel="canonical" href="/ContactUs" />
     </Helmet>
     <div className="Contact-us-start">
       <div className="Contact-us-1 heroku-da">Contact Us</div>
